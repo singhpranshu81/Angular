@@ -1,0 +1,21 @@
+{{name}} is a good boy
+<app-parent></app-parent>
+
+<input type="text" name="" id="{{myid}}" value="Priya" />
+<input type="text" name="" [id]="myid" value="Priya" />
+
+<input disabled type="text" name=""  value="Priya" /> <!--// this(disabled) is html attribute it is fixed can't be changed -->
+<input [disabled]="f" type="text" name="" [id]="myid" value="Priya" /><!-- // here it is property it'll reflect in DOM can be chanegd -->
+
+<!-- event binding -->
+<button (click)="sayHi()">Click </button>
+
+<!-- class binding -->
+<h2 class="as">Good mrng</h2>
+<h2 [class]="successClass">Good night</h2>
+
+<h2 [ngClass]="msgClass">Good evening</h2>
+
+<!-- two way binding -->
+
+<input type="text" [(ngModel)]="name"/>{{name}}      
